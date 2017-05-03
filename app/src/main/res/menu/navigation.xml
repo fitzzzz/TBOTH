@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:title="@string/title_carte_fidelite"
+        android:id="@+id/navigation_fidelite"
+        android:icon="@drawable/ic_card_membership_black_24dp"/>
+    <item
+        android:title="@string/title_parrainage"
+        android:id="@+id/navigation_parrainage"
+        android:icon="@drawable/ic_supervisor_account_black_24dp"/>
+
+    <item android:title="@string/title_cadeaux"
+        android:id="@+id/navigation_cadeaux"
+        android:icon="@drawable/ic_card_giftcard_black_24dp"/>
+
+</menu>

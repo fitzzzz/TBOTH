@@ -1,0 +1,1 @@
+Padding top: sur les vues fragments tabbed ("home")
