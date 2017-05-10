@@ -8,6 +8,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
+import lang.david.android.ihm.polytech.tboth.gift.GiftPagerFragment;
 import lang.david.android.ihm.polytech.tboth.home.HomePagerFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
                     fragmentManager.beginTransaction().replace(R.id.frag_content, new HomePagerFragment()).commit();
                     return true;
                 case R.id.navigation_cadeaux:
-                    //TODO
+                    fragmentManager.beginTransaction().replace(R.id.frag_content, new GiftPagerFragment()).commit();
                     return true;
                 case R.id.navigation_fidelite:
                     //TODO

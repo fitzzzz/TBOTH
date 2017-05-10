@@ -5,8 +5,11 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import lang.david.android.ihm.polytech.tboth.gift.acheter.AcheterFragment;
+import lang.david.android.ihm.polytech.tboth.gift.recapitulatif.RecapitulatifFragment;
+import lang.david.android.ihm.polytech.tboth.gift.recevoir.RecevoirFragment;
 import lang.david.android.ihm.polytech.tboth.home.HomeSection;
-import lang.david.android.ihm.polytech.tboth.home.RankFragment;
+import lang.david.android.ihm.polytech.tboth.home.section.rank.RankFragment;
 
 
 public class GiftAdapter extends FragmentPagerAdapter {
@@ -19,38 +22,45 @@ public class GiftAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return(4);
+        return(GiftSection.values().length);
     }
 
     @Override
     public Fragment getItem(int position) {
-        HomeSection section = HomeSection.getSectionFromInt(position);
+        GiftSection section = GiftSection.getSectionFromInt(position);
+        Fragment fragment = new RecapitulatifFragment();
         switch (section) {
-            case RANK:
+            case RECAPITULATIF:
+                fragment = new RecapitulatifFragment();
                 break;
-            case MAGASINS:
+            case ACHETER:
+                fragment = new AcheterFragment();
                 break;
-            case ITEMS:
-                break;
-            default:
+            case RECEVOIR:
+                fragment = new RecevoirFragment();
                 break;
         }
-        return(RankFragment.newInstance(position));
+        return fragment;
     }
 
     @Override
     public String getPageTitle(int position) {
-        HomeSection section = HomeSection.getSectionFromInt(position);
+        GiftSection section = GiftSection.getSectionFromInt(position);
+        String title;
         switch (section) {
-            case RANK:
+            case RECAPITULATIF:
+                title = RecapitulatifFragment.getTitle();
                 break;
-            case MAGASINS:
+            case ACHETER:
+                title = AcheterFragment.getTitle();
                 break;
-            case ITEMS:
+            case RECEVOIR:
+                title = RecevoirFragment.getTitle();
                 break;
             default:
+                title = "";
                 break;
         }
-        return(RankFragment.getTitle(ctxt, position));
+        return title;
     }
 }

@@ -1,5 +1,6 @@
-package lang.david.android.ihm.polytech.tboth.home.section.magasins;
+package lang.david.android.ihm.polytech.tboth.home.section.rank;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -11,22 +12,21 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import lang.david.android.ihm.polytech.tboth.R;
-import lang.david.android.ihm.polytech.tboth.home.section.rank.RankAdapter;
 import lang.david.android.ihm.polytech.tboth.model.MagasinModel;
 
 /**
- * Created by DavidLANG on 01/05/2017.
+ * Created by DavidLANG on 27/04/2017.
  */
 
-public class MagasinsFragment extends Fragment {
+public class RankFragment  extends Fragment {
 
     public static String getTitle() {
-        return "magasins";
+        return "classement";
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View result=inflater.inflate(R.layout.home_magasins_section, container, false);
+        View result=inflater.inflate(R.layout.home_rank_section, container, false);
 
         return(result);
     }
@@ -34,14 +34,14 @@ public class MagasinsFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        RecyclerView recyclerView = (RecyclerView) this.getActivity().findViewById(R.id.magasin_recycler_view);
-        MagasinAdapter magasinAdapter = new MagasinAdapter(MagasinModel.getInstance().getMagasins());
+        RecyclerView recyclerView = (RecyclerView) this.getActivity().findViewById(R.id.magasin_rank_recycler_view);
+        RankAdapter rankAdapter = new RankAdapter(MagasinModel.getInstance().getMagasins());
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(recyclerView.getContext(),
                 linearLayoutManager.getOrientation());
 
         recyclerView.addItemDecoration(dividerItemDecoration);
-        recyclerView.setAdapter(magasinAdapter);
+        recyclerView.setAdapter(rankAdapter);
         recyclerView.setLayoutManager(linearLayoutManager);
     }
 }

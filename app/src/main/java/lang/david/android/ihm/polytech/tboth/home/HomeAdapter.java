@@ -5,11 +5,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import lang.david.android.ihm.polytech.tboth.home.RankFragment;
+import lang.david.android.ihm.polytech.tboth.home.section.rank.RankFragment;
 import lang.david.android.ihm.polytech.tboth.home.section.items.ItemsFragment;
 import lang.david.android.ihm.polytech.tboth.home.section.magasins.MagasinsFragment;
-
-import static lang.david.android.ihm.polytech.tboth.home.HomeSection.RANK;
 
 /**
  * Created by DavidLANG on 27/04/2017.
@@ -31,9 +29,10 @@ public class HomeAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         HomeSection section = HomeSection.getSectionFromInt(position);
-        Fragment fragment = RankFragment.newInstance(position);
+        Fragment fragment;
         switch (section) {
             case RANK:
+                fragment = new RankFragment();
                 break;
             case MAGASINS:
                 fragment = new MagasinsFragment();
@@ -42,6 +41,7 @@ public class HomeAdapter extends FragmentPagerAdapter {
                 fragment = new ItemsFragment();
                 break;
             default:
+                fragment = new RankFragment();
                 break;
         }
         return(fragment);
@@ -59,7 +59,7 @@ public class HomeAdapter extends FragmentPagerAdapter {
                 title = ItemsFragment.getTitle();
                 break;
             default:
-                title = RankFragment.getTitle(ctxt, position);
+                title = RankFragment.getTitle();
                 break;
         }
         return title;

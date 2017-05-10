@@ -4,14 +4,9 @@
     android:layout_height="match_parent"
     android:paddingTop="60dp">
 
-
-    <android.support.v7.widget.RecyclerView
+    <TextView
+        android:id="@+id/textView5"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbars="vertical"
-        android:id="@+id/magasin_recycler_view">
-    </android.support.v7.widget.RecyclerView>
-
-
-
+        android:layout_height="wrap_content"
+        android:text="Acheter Section" />
 </LinearLayout>

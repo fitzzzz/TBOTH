@@ -8,13 +8,13 @@ public class Item {
     private ItemType type;
     private String nom;
     private String description;
-    private String imageURL;
+    private int idImage;
 
-    public Item(ItemType type, String nom, String description, String imageURL) {
+    public Item(ItemType type, String nom, String description, int idImage) {
         this.type = type;
         this.nom = nom;
         this.description = description;
-        this.imageURL = imageURL;
+        this.idImage = idImage;
     }
 
     public ItemType getType() {
@@ -29,8 +29,8 @@ public class Item {
         return description;
     }
 
-    public String getImageURL() {
-        return imageURL;
+    public int getIdImage() {
+        return idImage;
     }
 
     public void setType(ItemType type) {
@@ -45,7 +45,7 @@ public class Item {
         this.description = description;
     }
 
-    public void setImageURL(String imageURL) {
-        this.imageURL = imageURL;
+    public void setIdImage(int idImage) {
+        this.idImage = idImage;
     }
 }

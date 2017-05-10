@@ -38,6 +38,7 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsViewHolder> {
 
         holder.nom.setText(item.getNom());
         holder.description.setText(item.getDescription());
+        holder.image.setImageResource(item.getIdImage());
     }
 
     @Override

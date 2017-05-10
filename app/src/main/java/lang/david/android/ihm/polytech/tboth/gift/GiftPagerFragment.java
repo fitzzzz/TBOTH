@@ -12,6 +12,6 @@ public class GiftPagerFragment extends PagerFragment {
 
     @Override
     protected PagerAdapter buildAdapter() {
-        return null;
+        return(new GiftAdapter(getActivity(), getChildFragmentManager()));
     }
 }
