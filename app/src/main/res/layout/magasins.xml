@@ -1,38 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="100dp">
+    android:layout_height="100dp"
+    android:id="@+id/magasin_container">
 
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:id="@+id/magasin_image"
+        android:id="@+id/gift_image"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_marginStart="10dp" />
 
     <TextView
-        android:id="@+id/magasin_nom"
+        android:id="@+id/gift_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="test"
         android:textStyle="bold"
-        android:layout_alignTop="@+id/magasin_switch"
-        android:layout_toEndOf="@+id/magasin_image"
+        android:layout_alignTop="@+id/gift_utiliser_button"
+        android:layout_toEndOf="@+id/gift_image"
         android:layout_marginStart="17dp" />
 
     <TextView
-        android:id="@+id/magasin_adresse"
+        android:id="@+id/gift_montant"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/magasin_switch"
-        android:layout_alignStart="@+id/magasin_nom" />
+        android:layout_below="@+id/gift_utiliser_button"
+        android:layout_alignStart="@+id/gift_title" />
 
-    <Switch
-        android:id="@+id/magasin_switch"
+
+    <ImageButton
+        android:id="@+id/gift_utiliser_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:switchMinWidth="50dp"
         android:layout_marginEnd="11dp"
         android:layout_centerVertical="true"
         android:layout_alignParentEnd="true" />

@@ -25,17 +25,61 @@
         android:layout_height="wrap_content"
         android:text="TextView"
         android:textStyle="bold"
+        android:layout_marginTop="29dp"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/rank_adresse_magasin"
-        android:layout_marginTop="25dp" />
+        android:layout_alignStart="@+id/rank_adresse_magasin" />
 
     <TextView
         android:id="@+id/rank_adresse_magasin"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:layout_marginStart="40dp"
-        android:layout_alignTop="@+id/rank_magasin_name"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/rank_magasin_name"
         android:layout_toEndOf="@+id/rank_magasin_image"
-        android:layout_marginTop="26dp" />
+        android:layout_marginStart="7dp" />
+
+    <TextView
+        android:id="@+id/rank_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginLeft="10dp"
+        android:layout_above="@+id/textView8"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/rank_adresse_magasin" />
+
+    <TextView
+        android:id="@+id/rank_reduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/rank_adresse_magasin" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_above="@+id/rank_price"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/rank_adresse_magasin"
+        android:text="@string/prix_total"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="@string/r_duction"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBaseline="@+id/rank_adresse_magasin"
+        android:layout_alignBottom="@+id/rank_adresse_magasin"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/rank_adresse_magasin" />
 </RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:id="@+id/magasin_container">
+
+    <ImageView
+        android:id="@+id/gift_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        app:srcCompat="@drawable/ic_card_giftcard_black_24dp" />
+
+    <TextView
+        android:id="@+id/gift_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/gift_utiliser_button"
+        android:layout_toEndOf="@+id/gift_image"
+        android:layout_marginStart="17dp" />
+
+    <TextView
+        android:id="@+id/gift_montant"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/gift_title"
+        android:layout_below="@+id/gift_utiliser_button"
+        android:textSize="14sp" />
+
+
+    <Button
+        android:id="@+id/gift_utiliser_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/utiliser"/>
+
+</RelativeLayout>

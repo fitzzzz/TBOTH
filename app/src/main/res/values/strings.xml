@@ -8,5 +8,24 @@
     <string name="title_cadeaux">Cadeaux</string>
 
     <string name="hint">Editor #%d</string>
+    <string name="magasin_section_desc">Veuillez selectionner les magasins que vous voulez voir apparaitre dans le classement</string>
+    <string name="item_section_desc">Veuillez selectionner les produits que vous voulez prendre en compte dans le classement</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="produits">Produits</string>
+    <string name="magasins">Magasins</string>
+    <string name="classement">Classement</string>
+    <string name="recap">Recap</string>
+    <string name="achat">Achat</string>
+    <string name="recevoir">Recevoir</string>
+    <string name="rank_explication">Classement des magasins les moins chers en fonction des promotions courantes. Cliquez sur les magasins pour obtenir leurs localisations.</string>
+    <string name="rank_explication_instruction">Veuillez selectionner des magasins et des produits pour obtenir un classement des magasins les moins chers en fonction des promotions courantes.</string>
+    <string name="carte_cadeau">Carte cadeau :</string>
+    <string name="confirmer">confirmer</string>
+    <string name="confirmation_achat_label">Confirmation achat</string>
+    <string name="carte_cadeau_valable_dans_tous_les_magasins_tboth">Carte cadeau valable dans tous les magasins TBOTH</string>
+    <string name="utiliser">Utiliser</string>
+    <string name="faites_scanner_le_qr_code_pour_partager_ou_utiliser_votre_carte_cadeau">Faites scanner le qr code pour partager ou utiliser votre carte cadeau</string>
+    <string name="prix_total">Prix Total</string>
+    <string name="r_duction">Réduction</string>
 
 </resources>

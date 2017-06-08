@@ -1,5 +1,8 @@
 package lang.david.android.ihm.polytech.tboth.model.data;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+
 /**
  * Created by DavidLANG on 01/05/2017.
  */
@@ -9,12 +12,28 @@ public class Item {
     private String nom;
     private String description;
     private int idImage;
+    private double prix;
+    private boolean selectionne;
 
-    public Item(ItemType type, String nom, String description, int idImage) {
+    public Item(ItemType type, String nom, String description, int idImage, double price) {
         this.type = type;
         this.nom = nom;
         this.description = description;
         this.idImage = idImage;
+        this.prix = price;
+        this.selectionne = false;
+    }
+
+    public double getPrix() {
+        return prix;
+    }
+
+    public boolean isSelectionne() {
+        return selectionne;
+    }
+
+    public void setSelectionne(boolean selectionne) {
+        this.selectionne = selectionne;
     }
 
     public ItemType getType() {

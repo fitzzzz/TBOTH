@@ -2,10 +2,9 @@ package lang.david.android.ihm.polytech.tboth.home.section.magasins;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.Switch;
 import android.widget.TextView;
-import android.widget.ToggleButton;
 
 import lang.david.android.ihm.polytech.tboth.R;
 
@@ -17,13 +16,13 @@ public class MagasinViewHolder extends RecyclerView.ViewHolder {
     public TextView nom;
     public TextView adresse;
     public ImageView image;
-    public Switch aSwitch;
+    public ImageButton button;
 
     public MagasinViewHolder(View v) {
         super(v);
-        nom = (TextView) v.findViewById(R.id.magasin_nom);
-        adresse = (TextView) v.findViewById(R.id.magasin_adresse);
-        aSwitch = (Switch) v.findViewById(R.id.magasin_switch);
-        image = (ImageView) v.findViewById(R.id.magasin_image);
+        nom = (TextView) v.findViewById(R.id.gift_title);
+        adresse = (TextView) v.findViewById(R.id.gift_montant);
+        button = (ImageButton) v.findViewById(R.id.gift_utiliser_button);
+        image = (ImageView) v.findViewById(R.id.gift_image);
     }
 }

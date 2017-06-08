@@ -5,9 +5,10 @@ package lang.david.android.ihm.polytech.tboth.model.data;
  */
 
 public enum ItemType {
+    SELECTIONNE,
     CD,
     FILM,
     LIVRE,
     BD,
-    MANGAS;
+    MANGAS
 }

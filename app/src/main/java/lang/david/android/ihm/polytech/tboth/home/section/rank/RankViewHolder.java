@@ -17,6 +17,8 @@ public class RankViewHolder extends RecyclerView.ViewHolder {
     public TextView adresse;
     public ImageView image;
     public TextView rank;
+    public TextView prix;
+    public TextView reduction;
 
     public RankViewHolder(View v) {
         super(v);
@@ -24,6 +26,8 @@ public class RankViewHolder extends RecyclerView.ViewHolder {
         adresse = (TextView) v.findViewById(R.id.rank_adresse_magasin);
         image = (ImageView) v.findViewById(R.id.rank_magasin_image);
         rank = (TextView) v.findViewById(R.id.rank_magasin_position);
+        prix = (TextView) v.findViewById(R.id.rank_price);
+        reduction = (TextView) v.findViewById(R.id.rank_reduction);
     }
 }
 

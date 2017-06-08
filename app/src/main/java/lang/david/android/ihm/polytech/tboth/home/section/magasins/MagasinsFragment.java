@@ -35,7 +35,8 @@ public class MagasinsFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         RecyclerView recyclerView = (RecyclerView) this.getActivity().findViewById(R.id.magasin_recycler_view);
-        MagasinAdapter magasinAdapter = new MagasinAdapter(MagasinModel.getInstance().getMagasins());
+
+        MagasinAdapter magasinAdapter = new MagasinAdapter(MagasinModel.getMagasins());
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(recyclerView.getContext(),
                 linearLayoutManager.getOrientation());
