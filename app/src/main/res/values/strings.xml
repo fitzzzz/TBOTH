@@ -27,5 +27,7 @@
     <string name="faites_scanner_le_qr_code_pour_partager_ou_utiliser_votre_carte_cadeau">Faites scanner le qr code pour partager ou utiliser votre carte cadeau</string>
     <string name="prix_total">Prix Total</string>
     <string name="r_duction">Réduction</string>
+    <string name="prendre_en_photo">Prendre en photo</string>
+    <string name="veuillez_prendre_le_qr_code_g_n_r_partir_de_l_application_d_un_ami_offert_en_photo">Veuillez prendre le qr-code (généré à partir de l\'application d\'un ami) offert en photo</string>
 
 </resources>
